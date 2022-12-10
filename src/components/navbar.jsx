@@ -1,7 +1,6 @@
 import { ShoppingCart } from "phosphor-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import "../components/navbar.css";
 import addmobile from "../assets/addmobile.webp";
 import addweb from "../assets/addweb.webp";
 
@@ -17,10 +16,10 @@ export const Navbar = () => {
                 </div>{" "}
             </div>
 
-            <div className="navbar">
-                <div className="links">
-                    <Link to="/">Shop</Link>
-                    <Link to="/cart">
+            <div className=" w-100 h-35 bg-[#ec0062] flex justify-end ">
+                <div className=" mr-50 flex items-center">
+                    <Link className="no-underline text-white ml-5 text-sm" to="/">Shop</Link>
+                    <Link className="no-underline text-white ml-5 text-sm" to="/cart">
                         <ShoppingCart size={32} />
                     </Link>
                 </div>
